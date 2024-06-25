@@ -36,14 +36,14 @@ public class CategoriesController
         return categoryDao.getAllCategories();
     }
     // add the appropriate annotation for a get action
-    @RequestMapping(path = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(path = "/categories/{id}", method = RequestMethod.GET)
     public Category getCategoryById(@PathVariable int id) {
         return categoryDao.getById(id);
     }
 
     // the url to return all products in category 1 would look like this
     // https://localhost:8080/categories/1/products
-    @RequestMapping(path = "/{categoryId}/products", method = RequestMethod.GET)
+    @RequestMapping(path = "/categories/{categoriesId}/products", method = RequestMethod.GET)
     public List<Product> getProductsById(@PathVariable int categoryId) {
         return productDao.listByCategoryId(categoryId);
     }
@@ -51,7 +51,7 @@ public class CategoriesController
 
     // add annotation to call this method for a POST action
     // add annotation to ensure that only an ADMIN can call this function
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(path = "/categories",method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
     @Secured("ROLE_ADMIN")
     public Category addCategory(@RequestBody Category category) {
@@ -61,7 +61,7 @@ public class CategoriesController
 
     // add annotation to call this method for a PUT (update) action - the url path must include the categoryId
     // add annotation to ensure that only an ADMIN can call this function
-    @RequestMapping(path = "/{id}", method = RequestMethod.PUT)
+    @RequestMapping(path = "/categories/{id}", method = RequestMethod.PUT)
     @Secured("ROLE_ADMIN")
     public void updateCategory(@PathVariable int id, @RequestBody Category category) {
         categoryDao.update(id, category);
@@ -70,7 +70,7 @@ public class CategoriesController
 
     // add annotation to call this method for a DELETE action - the url path must include the categoryId
     // add annotation to ensure that only an ADMIN can call this function
-    @RequestMapping(path = "/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(path = "/categories/{id}", method = RequestMethod.DELETE)
     @Secured("ROLE_ADMIN")
     public void deleteCategory(@PathVariable int id) {
         categoryDao.delete(id);
