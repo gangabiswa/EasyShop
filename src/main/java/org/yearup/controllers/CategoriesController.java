@@ -16,6 +16,9 @@ import java.util.List;
     // http://localhost:8080/categories
 // add annotation to allow cross site origin requests
 @RestController
+@RequestMapping("/categories")
+
+@CrossOrigin
 public class CategoriesController
 {
     private CategoryDao categoryDao;
@@ -30,14 +33,14 @@ public class CategoriesController
     // create an Autowired controller to inject the categoryDao and ProductDao
 
     // add the appropriate annotation for a get action
-    @RequestMapping(path = "/categories",method = RequestMethod.GET)
-    public List<Category> getAll() {
+    @RequestMapping(method = RequestMethod.GET)
+    public List<Category> getAllCategories() {
         // find and return all categories
         return categoryDao.getAllCategories();
     }
     // add the appropriate annotation for a get action
     @RequestMapping(path = "/categories/{id}", method = RequestMethod.GET)
-    public Category getCategoryById(@PathVariable int id) {
+    public Category getById(@PathVariable int id) {
         return categoryDao.getById(id);
     }
 
