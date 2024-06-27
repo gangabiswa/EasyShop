@@ -2,7 +2,7 @@
 
 ## Description of the Project
 A console application called java-bites Ordering System is used to handle customer orders for sandwich shops.
-![Class Diagram](path/![img.png](img.png)to/your/class_diagram.png)
+![Class Diagram](![Screenshot 2024![Screens![Screenshot 2024-06-27 141535.png](..%2F..%2FUsers%2FStudent%2FPictures%2FScreenshots%2FScreenshot%202024-06-27%20141535.png)hot 2024-06-27 141352.png](..%2F..%2FUsers%2FStudent%2FPictures%2FScreenshots%2FScreenshot%202024-06-27%20141352.png)-06-27 141257.png](..%2F..%2FUsers%2FStudent%2FPictures%2FScreenshots%2FScreenshot%202024-06-27%20141257.png)path/![img.png](img.png)to/your/class_diagram.png)
 ![img_1.png](img_1.png)
 
 ## User Stories
@@ -31,7 +31,7 @@ A console application called java-bites Ordering System is used to handle custom
 ### Running the Application in IntelliJ
 
 Follow these steps to get your application running within IntelliJ IDEA:
-![img_![Screenshot 2024-0![Screenshot 20![Screenshot 2024-06-27 141535.png](..%2F..%2FUsers%2FStudent%2FPictures%2FScreenshots%2FScreenshot%202024-06-27%20141535.png)24-06-27 141352.png](..%2F..%2FUsers%2FStudent%2FPictures%2FScreenshots%2FScreenshot%202024-06-27%20141352.png)6-27 141257.png](..%2F..%2FUsers%2FStudent%2FPictures%2FScreenshots%2FScreenshot%202024-06-27%20141257.png)2.png](img_2.png)
+![img_2.png](img_2.png)
 1. Open IntelliJ IDEA.
 2. Select "Open" and navigate to the directory where you cloned or downloaded the project.
 3. After the project opens, wait for IntelliJ to index the files and set up the project.
