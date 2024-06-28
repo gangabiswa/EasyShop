@@ -1,6 +1,7 @@
 # Java-Bites
 
 ## Description of the Project
+-This project is a Spring Boot-based RESTful API for managing categories and products in an e-commerce application. It provides endpoints for CRUD (Create, Read, Update, Delete) operations on categories and allows retrieval of products by category.
 ![Class Diagram](![Screenshot 2024![Screens![Screenshot 2024-06-27 141535.png](..%2F..%2FUsers%2FStudent%2FPictures%2FScreenshots%2FScreenshot%202024-06-27%20141535.png)hot 2024-06-27 141352.png](..%2F..%2FUsers%2FStudent%2FPictures%2FScreenshots%2FScreenshot%202024-06-27%20141352.png)-06-27 141257.png](..%2F..%2FUsers%2FStudent%2FPictures%2FScreenshots%2FScreenshot%202024-06-27%20141257.png)path/![img.png](img.png)to/your/class_diagram.png)
 ![img_1.png](img_1.png)
 
